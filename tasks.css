@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Pangolin');
+ @keyframes fadein {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+ 
+ body {
+     background: url(background.jpg);
+     font-family: 'Pangolin', cursive;
+ }
+ 
+ .tasks {
+     min-height: 900px;
+     max-height: 100%;
+ }
+ 
+ .newtask {
+     float: right;
+ }
+ 
+ .task {
+     display: inline-block;
+     padding: 20px;
+     margin: 20px;
+     background: url(bgtask.png);
+     width: 250px;
+     height: 250px;
+     font-size: 17px;
+ }
+ 
+ p.comment {
+     width: 180px;
+     height: 150px;
+     word-wrap: break-word;
+     overflow-y: auto;
+     padding-left: 15px;
+ }
+ 
+ p.date {
+     float: left;
+     margin: 0 20px;
+ }
+ 
+ .glyphicon-remove {
+     padding: 5px;
+     color: transparent;
+ }
+ 
+ .task:hover .glyphicon-remove {
+     background: brown;
+     color: #fff;
+ }
+ 
+ div.mesg {
+     width: 378px;
+     height: 50px;
+     background: #ececec;
+     margin-top: 8px;
+     padding: 5px;
+ }
+ 
+ .title p {
+     color: #fff;
+     font-size: 36px;
+     text-align: center;
+     background-image: url(title_bg.png);
+     background-size: 100% 100%;
+     width: 318px;
+     margin: auto;
+     padding: 20px;
+     font-weight: bold;
+ }
+ 
+ form#taskform {
+     background: #f4c047;
+     padding: 25px;
+ }
+ 
+ textarea#comment {
+     width: 100%;
+     height: 250px;
+     background: #fff;
+     font-size: 20px;
+ }
+ 
+ form#taskform #date,
+ form#taskform #time {
+     font-size: 21px;
+ }
+ 
+ button#submit_task {
+     width: 100%;
+     padding: 5px 0;
+     font-size: 20px;
+     margin-top: 10px;
+ }

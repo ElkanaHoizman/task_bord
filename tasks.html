@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>tasks bord</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="tasks.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="tasks.js"></script>
+</head>
+
+<body onload="getStorage()">
+    <div class="row">
+
+        <div class="newtask col-md-4 col-xs-12">
+            <form id="taskform" action="">
+
+
+                <textarea id="comment" name="comment" form="usrform" placeholder="enter text here..." required></textarea><br>
+                <input id="time" type="time" name="time" placeholder="time">
+                <input id="date" type="date" name="date" max="2020-12-31" min="1979-12-31" placeholder="date"><br>
+
+                <button class=".btn-default" id="submit_task" onclick="setstorage()">Add Task</button>
+                <div id="mes" class="mes "></div>
+                <div id="mes" class="mes "></div>
+
+            </form>
+
+
+        </div>
+        <div class="tasks col-md-8 col-xs-12 " id="tasks">
+            <div class="title">
+                <p>My Task Bord </p>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        document.getElementById("submit_task").addEventListener("click", function(event) {
+            event.preventDefault()
+        });
+    </script>
+</body>
+
+
+
+
+
+</html>
